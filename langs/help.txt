@@ -1,0 +1,24 @@
+Release2zip $version, uno strumento per scaricare e zippare i programmi Mozilla
+Utilizzo: $name [canale] [opzioni]....
+
+I parametri obbligatori per le opzioni lunghe lo sono anche per quelle corte.
+I valori BOOLEANI possono essere omessi in caso si voglia assegnare il valore true.
+Maggiori informazioni nel file readme.txt.
+
+Opzioni
+  -h,  --help                  visualizza questo messaggio di aiuto.
+  -l,  --last                  forza la lingua a en-US. 
+  -d,  --dict==BOOLEANO        include (true) o non include i  dizionari salvati nella cartella dictionaries
+  -u,  --launcher=BoLEANO      include true) o non include il launcher nel pacchetto.
+  -s,  --sleep=BOOLEANO        ritarda alcuni comandi (da usare se la cartella e` in uso da software di sync).
+  -g,  --lang=LINGUA           imposta la lingua.
+  -t,  --archivetype=formato   tipo del file compresso (zip/7z/altro)               
+  -z,  --level=[0,1,3,5,7,9    livello di compressione, 0 nessuna 9 massimo  
+  
+Canali validi:
+	$allowedchannel
+	oppure prova con un numvero di versione e incrocia le dita.
+	Oppure passando direttamente una URL a un file eseguibile.
+	
+	
+	

@@ -1,0 +1,7 @@
+- Mettere i messaggi in inglese prevedendo la lingua it come alternativa
+- Migliorare il download dei dizionari
+- Aggiungere opzione per non creare l'archivio ma lasciare la cartella (questo è facile)
+ Aggiungere opzione per il timestamp
+ …
+ 
+ 

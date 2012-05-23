@@ -1,0 +1,7 @@
+
+Mozilla Italia Release2Zip Suite
+$name $version
+Scarica e crea il pacchetto ZIP per l'ultima versione di $app
+Applicazione rilasciata as-is, per info consultare http://mozilla.gfsolone.com/r2z
+Per maggiori informazioni digitare $name --help
+---
