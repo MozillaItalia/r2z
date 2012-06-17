@@ -1,7 +1,9 @@
 @echo off
+set thispath=%~d0%~p0\bin\
+set path=%path%;%thispath%
 set name=%~0
 set version=0.6
-set configfile=fxconfig.cfg
+set configfile=config\fxconfig.cfg
 set tmptxt=temp\tempt.txt
 set tmphtml=temp\temp.html
 set tmpexe=temp\temp.exe
