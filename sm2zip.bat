@@ -1,7 +1,9 @@
 @echo off
+set thispath=%~d0%~p0\bin\
+set path=%path%;%thispath%
 set name=%~0
 set version=0.5
-set configfile=smconfig.cfg
+set configfile=config\smconfig.cfg
 set tmptxt=temp\tempt.txt
 set tmphtml=temp\temp.html
 set tmpexe=temp\temp.exe
@@ -126,7 +128,7 @@ goto nodict
 :launcher:
 set sed="s/#app#/%lowerapp%/"
 ssed -e %sed% launcher\launcher_prototype.bat > %foldername%\launcher.bat
-xcopy /E launcher\* %foldername% /exclude:exclude.txt
+xcopy /E launcher\* %foldername% /exclude:config\exclude.txt
 goto nolauncher
 
 :createarchive:

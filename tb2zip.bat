@@ -1,7 +1,9 @@
 @echo off
+set thispath=%~d0%~p0\bin\
+set path=%path%;%thispath%
 set name=%~0
 set version=0.6
-set configfile=tbconfig.cfg
+set configfile=config\tbconfig.cfg
 set tmptxt=temp\tempt.txt
 set tmphtml=temp\temp.html
 set tmpexe=temp\temp.exe
@@ -80,6 +82,7 @@ goto buildarchive
 :ftp:
 set url=%page%
 if "%last%"=="true" set lang=en-US
+if %channel%==ux set lang=en-US
 if %lang% neq en-US set url=%url%-l10n
 wget -U %useragent% %url% -O %tmphtml% -q
 set sed="/<a href=.%lowerapp%-.*\.%lang%\.win32\.installer\.exe.>%lowerapp%-.*\.%lang%\.win32\.installer\.exe<\/a>/{s/.*>%lowerapp%-\([0-9a\.]*\)\.%lang%\.win32\.installer\.exe<.*/\1/;p}"
@@ -99,6 +102,7 @@ goto error
 )
 REM Extracting downloaded file
 7z x %tmpexe% core
+
 set foldername=%lowerapp%
 if not %channel%==release set foldername=%foldername%-%channel%
 set output=%foldername%-%ver%-%lang%.win32.%archivetype%
@@ -116,7 +120,7 @@ goto createarchive
 if not exist dictionaries call dwdict %lang%
 if not exist %foldername%\dictionaries md %foldername%\dictionaries
 if not exist %foldername%\hyphenation md %foldername%\hyphenation
-move /Y dictionaries\hyph*  %foldername%\hyphenation
+move /Y dictionaries\hyph*  %foldername%\hyphenation\
 copy dictionaries\* %foldername%\dictionaries
 copy %foldername%\hyphenation\* dictionaries
 goto nodict
@@ -124,7 +128,7 @@ goto nodict
 :launcher:
 set sed="s/#app#/%lowerapp%/"
 ssed -e %sed% launcher\launcher_prototype.bat > %foldername%\launcher.bat
-xcopy /E launcher\* %foldername% /exclude:exclude.txt
+xcopy /E launcher\* %foldername% /exclude:config\exclude.txt
 goto nolauncher
 
 :createarchive:
@@ -160,5 +164,5 @@ echo OK, verificare che il pacchetto sia correttamente funzionante.
 :end:
 echo.
 pause
- 0f
+color 0f
 
