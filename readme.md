@@ -1,4 +1,5 @@
 Mozilla Italia Release2Zip Suite
+================================
 Ultima mod. 18-06-2012
 Rif. http://mozilla.gfsolone.com/r2z
 --
@@ -7,18 +8,20 @@ per il prodotto. Tutto il materiale disponibile viene pubblicato nei blog degli 
 Fare riferimento all'URL "Rif." sopra specificato.
 _________________________________________________________________________________________________
 
----- README
+README
+------
 
--- Esempi:
+Esempi
+-------
 
-	> fx2zip
+    fx2zip
+    
+Senza parametri, equivalente a lanciarlo da Esplora risorse.
+		Scarica l'ultima versione disponibile dal canale indicato in `fxconfig.cfg`, per impostazione predefinita si consiglia di lasciare release in modo da scaricare l'ultima versione stabile.
+
+    > fx2zip 10.0
 	
-		Senza parametri, equivalente a lanciarlo da Esplora risorse.
-		Scarica l'ultima versione disponibile dal canale indicato in fxconfig.cfg, per impostazione predefinita si consiglia di lasciare release in modo da scarica l'ultima versione stabile.
-
-	> fx2zip 10.0
-	
-		Scarica la versione indicata nella riga di comando (nell'esempio la versione 10.0) e la comprime in formato ZIP. 
+Scarica la versione indicata nella riga di comando (nell'esempio la versione 10.0) e la comprime in formato ZIP. 
 		Col passaggio al ciclo di rilascio rapido è possibile trovare solo l'ultima versione sui server mozilla.
 		È possibile sfruttare questa possibilità per scaricare l'ultima versione se essa non è ancora stata rilasciata ufficialmente, si scarica dal server FTP che di solito viene aggiornato il giorno prima.
 
