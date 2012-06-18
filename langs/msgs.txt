@@ -1,3 +1,0 @@
-msgwgeterr==Si e` verificato un errore tentando di scaricare %url%
-msgerrheader==ATTENZIONE!
-msrerrfooter==Riprova piu' tardi o contatta gli sviluppatori se il problema persiste

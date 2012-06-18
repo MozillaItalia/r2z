@@ -128,7 +128,7 @@ goto nodict
 :launcher:
 set sed="s/#app#/%lowerapp%/"
 ssed -e %sed% launcher\launcher_prototype.bat > %foldername%\launcher.bat
-xcopy /E launcher\* %foldername% /exclude:exclude.txt
+xcopy /E launcher\* %foldername% /exclude:config\exclude.txt
 goto nolauncher
 
 :createarchive:

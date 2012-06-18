@@ -4,7 +4,7 @@ REM Batch file to download languages files from OpenOffice project
 if "%1"=="" goto noparams
 set lang=%1
 set url=none
-for /F "delims=== tokens=1,2" %%i in (langs.cfg) do if  %%i==%lang% set url=%%j
+for /F "delims=== tokens=1,2" %%i in (config\langs.cfg) do if  %%i==%lang% set url=%%j
 if %url%==none goto nolang
 set kindly=%url%
 set baseurl=http://extensions.services.openoffice.org/

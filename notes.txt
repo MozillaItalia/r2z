@@ -3,7 +3,7 @@ Differenze nei file:
 
 -- fx2zip e tb2zip
 cambiare il file di configurazione fxconfig.cfg con tbconfig.cfg
-eliminare, opzionalmente, la riga sulla ux che non è necessari
+eliminare, opzionalmente, la riga sulla ux che non è necessaria
 
 
 fx2zip e sm2zip.bat
