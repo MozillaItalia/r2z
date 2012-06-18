@@ -1,5 +1,5 @@
 Mozilla Italia Release2Zip Suite
-Ultima mod. 22-04-2012
+Ultima mod. 18-06-2012
 Rif. http://mozilla.gfsolone.com/r2z
 --
 Il software viene rilasciato as-is, non esiste attualmente alcun supporto
@@ -85,15 +85,26 @@ ________________________________________________________________________________
 ---- CHANGELOG (Versioni)
 ---- La modifica più recente è sempre in testa!
 
+fx2zip 0.6 rev11 18/06/2012 (@gioxx)
+	Sincronizzazione file completata.
+	File readme aggiornato.
+	Ripopolate le cartelle condivise di Dropbox per distribuire i pacchetti già pronti del prodotto (e archivio). Ho aggiornato quindi la pagina HTML dato che i file non vengono più conservati su Github.
+	
+fx2zip 0.6 rev10 18/06/2012 (@gialloporpora)
+	Pulizia delle cartelle e organizzazione dei file
+	
 fx2zip 0.6 rev9 25/04/2012 (@gialloporpora)
 	Colorato un po'
 	Modificato, anche se continuo a non capirne l'utilità, il nome del pacchetto finale
+	
 fx2zip 0.6 rev8 25/04/2012 (@gialloporpora)
 	Messo wget in modalità quieta quando scarica i file temporanei da analizzare, ora l'output viene prodotto solo quando scarica il file dell'installer
 	Messo tutto alla versione 0.6
+	
 fx2zip 0.5 rev7 24/04/2012 (@gialloporpora)
 	Sistemato un problema di nominazione dei file di archivio (veniva duplicata la versione passando un numero di versione). 
 	Sistemati gli URL sbagliati in tbconfig.cfg (en-us in minuscolo :-P)
+	
 fx2zip 0.5 rev6 24/04/2012 (@gialloporpora)
 	Aggiunto un rozzo supporto al parsing della riga di comando
 	Cambiato il nome di langs.txt in langs.cfg così si capisce che è un file di configurazione
