@@ -94,12 +94,13 @@ oftware inclusi nel pacchetto
 [SSED]: http://sed.sourceforge.net/grabbag/ssed/
 [wget]: http://www.gnu.org/software/wget/
 [7z]: http://www.7-zip.org/
-	A cosa servono?
-	wget serve per eseguire il download dei file, sed per fare un, rozzo, parsing delle pagine web alla ricerca dei link e infine 7z serve per estrarre e creare gli archivi.
+### A cosa servono? ###
+*wget* serve per eseguire il download dei file, *sed* per fare un, rozzo, parsing delle pagine web alla ricerca dei link e infine *7z* serve per estrarre e creare gli archivi.
 	
-_________________________________________________________________________________________________
 
----- CHANGELOG (Versioni)
+
+CHANGELOG (Versioni)
+---
 ---- La modifica più recente è sempre in testa!
 
 fx2zip 0.6 rev11 18/06/2012 (@gioxx)
