@@ -9,10 +9,10 @@ Fare riferimento all'URL "Rif." sopra specificato.
 
 Sommario
 ------
-* [Esempi](#Esempi)
-* [Opzioni avanzate](#avanzate)
-* [Scaricare i file della lingua](#lingue)
-* [Software inclusi nel pacchetto](#software)
+* [Esempi
+* Opzioni avanzate
+* Scaricare i file della lingua
+* Software inclusi nel pacchetto
 
 
 Esempi
@@ -51,8 +51,9 @@ Per Thunderbird (tb2zip) si possono indicare i canali aurora e nightly anche con
 Il canale esr è disponibile anche per Thunderbird (ma non per Seamonkey).
 Il canale ux è disponibile solo per Firefox.
 
-TODO: 
-----
+    fx2zip aurora -t=7z -z=9
+    
+Crea un pacchetto in formato 7z utilizzando la massima compressione possibile del canale aurora.
 
 Opzioni avanzate
 -----------------
@@ -77,7 +78,7 @@ Per il livello di compressione, questi sono i valori possibili:
 
 Per maggiori dettagli: [http://www.dotnetperls.com/7-zip-examples](7-ZIP Examples]
 	
-a
+Scaricare i file della lingua
 ------------------------------
 Lo script dwdict.bat permette di scaricare i file necessari per i dizionari e la sillabazione dal sito di OpenOffice. 
 Lo script che costruisce il pacchetto avvia automaticamente il download di questi file (stessa lingua del programma) se non esiste una cartella dictionaries.
@@ -86,7 +87,7 @@ Si possono includere più lingue, lo script è impostato per le lingue francese 
 
 Software inclusi nel pacchetto
 -------------------------------
-1. [SSED] - Sed (versione modificata di sed che non necessita di DLL aggiuntive): [SSED][]
+1. [SSED][] - versione modificata di sed che non necessita di DLL aggiuntive
 2. [wget] [] - Download Manager da riga di comando
 3. [7z] [] -  l'eseguibile utilizzabile da riga dei comandi
 
@@ -94,6 +95,6 @@ Software inclusi nel pacchetto
 [SSED]: http://sed.sourceforge.net/grabbag/ssed/
 [wget]: http://www.gnu.org/software/wget/
 [7z]: http://www.7-zip.org/
+
 ### A cosa servono? ###
-*wget* serve per eseguire il download dei file, *sed* per fare un, rozzo, parsing delle pagine web alla ricerca dei link e infine *7z* serve per estrarre e creare gli archivi.
-	
+*wget* serve per eseguire il download dei file, *sed* per fare un, rozzo, parsing delle pagine web alla ricerca dei link e infine *7z* serve per estrarre e creare gli archivi
