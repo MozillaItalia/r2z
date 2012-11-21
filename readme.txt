@@ -104,6 +104,9 @@ CHANGELOG (Versioni)
 ---
 ---- La modifica più recente è sempre in testa!
 
+fx2zip / tb2zip / sm2zip 0.7 21/11/2012 (@gioxx)
+	Ho sostituito il mirror dei pacchetti aggiornati puntando a ftp.mozilla.org, così da lasciare a loro la selezione random del server che fornisce il download.
+	
 fx2zip 0.6 rev11 18/06/2012 (@gioxx)
 	Sincronizzazione file completata.
 	File readme aggiornato.

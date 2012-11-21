@@ -2,7 +2,7 @@
 set thispath=%~d0%~p0\bin\
 set path=%path%;%thispath%
 set name=%~0
-set version=0.5
+set version=0.7
 set configfile=config\smconfig.cfg
 set tmptxt=temp\tempt.txt
 set tmphtml=temp\temp.html
@@ -64,7 +64,9 @@ REM no valid channel, somthing go wrong (old version are not supported)
 :other:
 set channel=release
 set ver=%1
-set url=http://pv-mirror02.mozilla.org/pub/mozilla.org/%lowerapp%/releases/%ver%/win32/%lang%/%app%%%20Setup%%20%ver%.exe
+REM Sposto il download sullo spazio FTP pubblico così da dipendere dalla selezione Mozilla (Gioxx 20121121)
+REM set url=http://pv-mirror02.mozilla.org/pub/mozilla.org/%lowerapp%/releases/%ver%/win32/%lang%/%app%%%20Setup%%20%ver%.exe
+set url=ftp://ftp.mozilla.org/pub/%lowerapp%/releases/%ver%/win32/%lang%/%app%%%20Setup%%20%ver%.exe
 goto buildarchive
 
 REM Parse the html page where are stored info about the latest version available
