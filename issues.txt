@@ -1,0 +1,1 @@
+- Dalla versione 20121121@gioxx e' stato cambiato il puntamento al server di download, serve così specificare (nel 90% dei casi) il numero di versione dopo il richiamo del batch (esempio: fx2zip 17.0.1), in caso contrario lo script non sara' capace di individuare e scaricare il software.
