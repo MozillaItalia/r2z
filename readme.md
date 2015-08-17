@@ -9,7 +9,7 @@ Fare riferimento all'URL "Rif." sopra specificato.
 
 Sommario
 ------
-* [Esempi
+* Esempi
 * Opzioni avanzate
 * Scaricare i file della lingua
 * Software inclusi nel pacchetto

@@ -1,7 +1,6 @@
 - Mettere i messaggi in inglese prevedendo la lingua it come alternativa
 - Migliorare il download dei dizionari
 - Aggiungere opzione per non creare l'archivio ma lasciare la cartella (questo è facile)
- Aggiungere opzione per il timestamp
- …
- 
- 
+- Aggiungere opzione per il timestamp
+- Risolvere i problemi di riconoscimento e download ultima versione (o via argomento canale passato al batch)
+…

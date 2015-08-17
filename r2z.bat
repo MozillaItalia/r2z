@@ -1,8 +1,10 @@
 @echo off
-set releasedbfolder=c:\dropbox\release2zip\latest
-set olddbfolder=c:\dropbox\release2zip\old
-set author=%1
-if "%1"=="" set author=gialloporpora
+set releasedbfolder=%1
+set olddbfolder=%2
+set author=%3
+if "%1"=="" set releasedbfolder=c:\dropbox\release2zip\latest
+if "%2"=="" set olddbfolder=c:\dropbox\release2zip\old
+if "%3"=="" set author=gialloporpora
 set name=Release2Zip-%date:~6,4%%date:~3,2%%date:~0,2%@%author%.7z
 
 7z a %name%  @files.txt

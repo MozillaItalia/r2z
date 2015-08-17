@@ -1,10 +1,10 @@
 # Istruzioni per rilasciare il pacchetto
+# Ult.agg. 17/8/15 - Gioxx
 Per costruire il pacchetto da rilasciare, procedere come segue:
 
-1. Modificare il file `r2z.bat` inserendo i giusti percorsi alle cartelle su *Droppbox* (latest e old)
-2. Assicurarsi di avere la cartella *bin*, che non va aggiunta via git, con gli eseguibili di *ssed*, *7z* e *wget* (Una copia della cartella  nella cartella condivisa su Dropbox
-3. Per includere un nuovo file nel pacchetto via r2z.bat (r2z nome_di_chi_rilascia) aggiungerlo a files.txt.
-4. Eseguire `r2z.bat` da riga di comando passando il nome di chi rilascia come argomento, esempio: `r2z gialloporpora`
+1. Assicurarsi di avere la cartella *bin*, che non va aggiunta via git, con gli eseguibili di *ssed*, *7z* e *wget* (Una copia della cartella  nella cartella condivisa su Dropbox
+2. Per includere un nuovo file nel pacchetto via r2z.bat (r2z nome_di_chi_rilascia) aggiungerlo a files.txt.
+3. Eseguire `r2z.bat` da riga di comando passando i parametri per la cartella di rilascio (latest) e archivio (oldversion) oltre che il nome di chi crea il pacchetto, esempio: `r2z C:\Dropbox\Release2Zip\latest C:\Dropbox\Release2Zip\oldversion gioxx` (se non si passa alcun argomento vengono prese per buone le variabili impostate in maniera assoluta nel file batch, da modificare se necessario).
 
 ## Istruzioni per modificare i vari script ##
 

@@ -2,7 +2,7 @@
 set thispath=%~d0%~p0\bin\
 set path=%path%;%thispath%
 set name=%~0
-set version=0.7
+set version=0.9
 set configfile=config\fxconfig.cfg
 set tmptxt=temp\tempt.txt
 set tmphtml=temp\temp.html
@@ -39,7 +39,7 @@ echo.
 echo Mozilla Italia Release2Zip Suite
 echo %app%2Zip %version%
 echo Scarica e crea il pacchetto ZIP per l'ultima versione di %app%
-echo Applicazione rilasciata as-is, per info consultare http://mozilla.gfsolone.com/r2z
+echo Applicazione rilasciata as-is, per info consultare http://noads.it/r2z
 echo Per maggiori informazioni digitare %name% --help
 echo ---
 echo;
@@ -64,9 +64,9 @@ REM no valid channel, somthing go wrong (old version are not supported)
 :other:
 set channel=release
 set ver=%1
-REM Sposto il download sullo spazio FTP pubblico così da dipendere dalla selezione Mozilla (Gioxx 20121121)
+REM Spazio FTP dismesso, rilancio su HTTP (Gioxx 20150817)
 REM set url=http://pv-mirror02.mozilla.org/pub/mozilla.org/%lowerapp%/releases/%ver%/win32/%lang%/%app%%%20Setup%%20%ver%.exe
-set url=ftp://ftp.mozilla.org/pub/%lowerapp%/releases/%ver%/win32/%lang%/%app%%%20Setup%%20%ver%.exe
+set url=http://ftp.mozilla.org/pub/%lowerapp%/releases/%ver%/win32/%lang%/%app%%%20Setup%%20%ver%.exe
 goto buildarchive
 
 REM Parse the html page where are stored info about the latest version available
@@ -85,18 +85,20 @@ goto buildarchive
 set url=%page%
 if "%last%"=="true" set lang=en-US
 if %channel%==ux set lang=en-US
-if %lang% neq en-US set url=%url%-l10n
+REM if %lang% neq en-US set url=%url%-l10n
+if %lang% neq en-US set url=%url%/win32/it
 wget -U %useragent% %url% -O %tmphtml% -q
 set sed="/<a href=.%lowerapp%-.*\.%lang%\.win32\.installer\.exe.>%lowerapp%-.*\.%lang%\.win32\.installer\.exe<\/a>/{s/.*>%lowerapp%-\([0-9a\.]*\)\.%lang%\.win32\.installer\.exe<.*/\1/;p}"
 ssed -n -e %sed% %tmphtml% > %tmptxt%
 for /f %%i in (%tmptxt%) do set ver=%%i
-set url=%url%/%lowerapp%-%ver%.%lang%.win32.installer.exe
+set url=%url%/%app%%%20Setup%%20%ver%.exe
 goto buildarchive
 
 
 
 REM now download the file and extract files
 :buildarchive:
+REM if "%1" == "" set url=ftp://ftp.mozilla.org/pub/firefox/releases/latest/win32/%lang%/%app%%%20Setup%%20%ver%.exe
 wget -U %useragent% %url% -O %tmpexe%
 if %errorlevel% neq 0 (
 set errmsg=Si e` verificato un errore tentando di scaricare %url%
