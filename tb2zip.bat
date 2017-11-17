@@ -39,7 +39,7 @@ echo.
 echo Mozilla Italia Release2Zip Suite
 echo %app%2Zip %version%
 echo Scarica e crea il pacchetto ZIP per l'ultima versione di %app%
-echo Applicazione rilasciata as-is, per info consultare http://mozilla.gfsolone.com/r2z
+echo Applicazione rilasciata as-is, per info consultare https://r2z.gioxx.org
 echo Per maggiori informazioni digitare %name% --help
 echo ---
 echo;
