@@ -1,3 +1,4 @@
+
 Mozilla Italia Release2Zip Suite
 ================================
 Ultima mod. 23-01-2018
@@ -26,7 +27,7 @@ Scarica l'ultima versione disponibile dal canale indicato in `fxconfig.cfg`, per
     fx2zip 10.0
 	
 Scarica la versione indicata nella riga di comando (nell'esempio la versione 10.0) e la comprime in formato ZIP. 
-Col passaggio al ciclo di rilascio rapido è possibile trovare solo l'ultima versione sui server mozilla.
+Col passaggio al ciclo di rilascio rapido è possibile trovare solo l'ultima versione sui server Mozilla.
 È possibile sfruttare questa possibilità per scaricare l'ultima versione se essa non è ancora stata rilasciata ufficialmente, si scarica dal server FTP che di solito viene aggiornato il giorno prima.
 
     fx2zip canale
@@ -36,18 +37,20 @@ Passando l'opzione --last (o -l) è possibile ignorare l'impostazione della ling
 Il canale UX ignorerà le impostazioni relative alla lingua in quanto non esistono versioni localizzate per questo canale ultra sperimentale.
 Per scaricare l'ultima nightly (senza modificare le impostazioni di lingua dal file di configurazione):
 
-  fx2zip nightly -last
-  
+    fx2zip nightly -last
+
 I canali supportati da tutti gli script sono:
 * nightly
 * aurora
 * beta
 * release
 
-per Firefox fx2zip) ci sono questi ulteriori canali:
+per Firefox (fx2zip) ci sono questi ulteriori canali:
 * esr
 * ux
+
 Per Thunderbird (tb2zip) si possono indicare i canali aurora e nightly anche con earlybird e daily.
+
 Il canale esr è disponibile anche per Thunderbird (ma non per Seamonkey).
 Il canale ux è disponibile solo per Firefox.
 
@@ -65,7 +68,9 @@ Le opzioni avanzate si possono impostare modificando con un editor di testo i fi
 
 I file si possono trovare nella cartella *config*. Vanno modificati con un editor di testo semplice: no Wordpad, no Word e nemmeno Writer di OpenOffice, in mancanza di un editor avanzato è possibile usare il Blocco Note di Windows (notepad).
 È possibile inserire dei commenti usando il carattere #
+
 ***WARNING: non modificare le preferenze che riportano gli url dei canali e il nome delle applicazioni, potrebbero inficiare il corretto funzionamento dello script.***
+
 E` possibile impostare la lingua (esempio fr per il francese) e di impostare lo script per includere/escludere i dizionari e il launcher dal pacchetto.
 Dalla versione 0.2 è possibile indicare il tipo di archivio e il livello di compressione. 
 Per il livello di compressione, questi sono i valori possibili:
@@ -76,7 +81,7 @@ Per il livello di compressione, questi sono i valori possibili:
 * 7 - compressione maggiore
 * 9 - compressione massima
 
-Per maggiori dettagli: [http://www.dotnetperls.com/7-zip-examples](7-ZIP Examples]
+Per maggiori dettagli: [7-ZIP Examples](http://www.dotnetperls.com/7-zip-examples)
 	
 Scaricare i file della lingua
 ------------------------------
@@ -87,14 +92,9 @@ Si possono includere più lingue, lo script è impostato per le lingue francese 
 
 Software inclusi nel pacchetto
 -------------------------------
-1. [SSED][] - versione modificata di sed che non necessita di DLL aggiuntive
-2. [wget] [] - Download Manager da riga di comando
-3. [7z] [] -  l'eseguibile utilizzabile da riga dei comandi
-
-
-[SSED]: http://sed.sourceforge.net/grabbag/ssed/
-[wget]: http://www.gnu.org/software/wget/
-[7z]: http://www.7-zip.org/
+1. **[SSED](http://sed.sourceforge.net/grabbag/ssed/)**: versione modificata di sed che non necessita di DLL aggiuntive
+2. **[wget](http://www.gnu.org/software/wget/)**: Download Manager da riga di comando
+3. **[7z](http://www.7-zip.org/)**:  l'eseguibile utilizzabile da riga dei comandi
 
 ### A cosa servono? ###
-*wget* serve per eseguire il download dei file, *sed* per fare un, rozzo, parsing delle pagine web alla ricerca dei link e infine *7z* serve per estrarre e creare gli archivi
+*wget* serve per eseguire il download dei file, *sed* per fare un, rozzo, parsing delle pagine web alla ricerca dei link e infine *7z* serve per estrarre e creare gli archivi.
