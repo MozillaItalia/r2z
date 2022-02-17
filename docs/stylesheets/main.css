@@ -1,0 +1,73 @@
+﻿body { background: #fff; font-family: Arial, Helvetica, sans-serif; }
+
+#header { width: 1000px; margin: 0 auto 35px auto; min-height: 118px; position: relative; border-bottom: 1px solid #ccc; }
+#header h1 { padding-top: 38px; }
+#header h1 a { /*display: block;*/ padding: 18px; /*border: 1px solid #ccc;*/ text-decoration: none; font-size: 23px; color: #000; text-transform: uppercase; width: 190px; }
+#header h1 a strong { color: #666; }
+#header ul { position: absolute; bottom: 15px; right: 0; }
+#header ul li, #footer ul li { display: inline; }
+#header ul li a, #footer ul li a { display: block; float: left; font-size: 14px; color: #000; text-decoration: none; text-transform: uppercase; padding: 0 15px; border-right: 1px solid #ccc; }
+#header ul li.last-item a { padding-right: 0; border: none; }
+#header ul li a.active, #footer ul li a.active { font-weight: bold; }
+#header p { font-size: 13px; position: absolute; top: 40px; right: 0; }
+#header p a { color: #000; text-decoration: none; border-left: 1px solid #ccc; padding-left: 10px; margin-left: 5px; }
+	
+#sub-header { width: 590px; margin: 0 auto; padding: 0 410px 35px 0; border-bottom: 1px solid #ccc; /*background: url(../images/layout/sub_header.gif) top right no-repeat;*/ background: url(https://gioxx.org/wp-content/uploads/sourcecode-vbscript.png) top right no-repeat; }
+#sub-header h2 { font-size: 40px; font-weight: bold; margin-bottom: 12px; }
+#sub-header p { font-size: 16px; line-height: 1.6; margin-bottom: 15px; }
+#sub-header p strong { font-weight: bold; }
+#sub-header p.continue { margin-bottom: 0; }
+#sub-header p.continue a, #main-content #services li p.continue a { color: #000; font-style: italic; text-decoration: none; background: url(../images/icons/arrow.gif) left no-repeat; padding-left: 25px; }
+	
+#content { width: 1000px; margin: 0 auto; }
+
+#main-content { width: 615px; float: left; padding: 25px 0 25px 0; }
+#main-content h2 a { /*display: block;*/ padding: 18px; /*border: 1px solid #ccc;*/ text-decoration: none; font-size: 23px; color: #000; text-transform: uppercase; width: 190px; }
+#main-content h2 a strong { color: #666; }
+#main-content h2 { padding-bottom: 12px; padding-top: 15px; }
+#main-content p { padding-bottom: 10px; }
+#main-content #services li { float: left; width: 270px; margin: 0 60px 30px 0; }
+#main-content #services li.last-row-item { margin-right: 0; }
+#main-content #services li h3 { font-size: 18px; font-weight: bold; margin-bottom: 3px; text-transform: uppercase;padding: 5px 0 15px 45px; }
+#main-content #services li p { font-size: 14px; line-height: 1.4; margin-bottom: 15px; }
+#main-content #services li p.continue { margin-bottom: 0; }
+#main-content #services li.item-1 h3 { background: url(../images/icons/service-1.gif) no-repeat; }
+#main-content #services li.item-2 h3 { background: url(../images/icons/service-2.gif) no-repeat; }
+#main-content #services li.item-3 h3 { background: url(../images/icons/service-3.gif) no-repeat; }
+#main-content #services li.item-4 h3 { background: url(../images/icons/service-4.gif) no-repeat; }
+
+#sidebar { background: #ccc; padding: 35px; width: 270px; float: right; }
+#sidebar h2 { margin-bottom: 10px; }
+#sidebar h3 { font-size: 1em; font-weight: bold; }
+#sidebar h4 { font-size: 14px; font-weight: bold; text-transform: uppercase; margin-bottom: 15px; }
+#sidebar p { font-size: 12px; line-height: 1.6; margin-bottom: 15px; }
+#sidebar p strong { font-weight: bold; }
+#sidebar p a { color: #000; text-decoration: none; }
+#sidebar ul li a { font-size: 11px; text-decoration: none; color: #000; background: url(../images/icons/arrow.gif) left no-repeat; padding-left: 25px; }
+#sidebar img.mozillaitalia-logo { float: right; max-width: 90px; }
+#sidebar img.icon { padding-right: 5px; max-width: 16px; }
+#sidebar div.aboutbox { border: #A29D9D solid 1px; padding: 12px 10px; margin-bottom: 10px; min-height: 90px; }
+#sidebar div.aboutbox p { padding-top: 7px; }
+#sidebar div.aboutbox img.avatar { max-width: 70px; float: right; }
+#sidebar div.aboutbox ul { padding: 10px 0 0 0; }
+#sidebar div.aboutbox ul li { list-style: none; background-repeat: no-repeat; background-position: left center; background-size: 16px; margin: 0; }
+#sidebar div.aboutbox ul li a { background-image: none; font-size: 12px; }
+#sidebar div.aboutbox ul li.blog { background-image: url("https://users.gxware.org/supportoinformatico/images/edit-128.png"); } 
+#sidebar div.aboutbox ul li.twitter { background-image: url("https://twitter.com/favicon.ico"); } 
+#sidebar div.aboutbox ul li.github { background-image: url("https://github.com/favicon.ico"); } 
+#sidebar div.github { margin-top: 30px; width: 270px; text-align: center; }
+#sidebar div.github img { max-width: 200px; }
+#sidebar div.github p { font-size: 1.2em; line-height: 1.6; margin-top: 15px; font-variant: small-caps; }
+#sidebar div.github a { text-decoration: none; color: #000000; font-weight: bold; }
+
+#footer { font-size: 12px; border-top: 1px solid #ccc; padding: 20px 0; clear: both; width: 1000px; margin: 0 auto; position: relative; }
+#footer ul li.first-item a { padding-left: 0; }
+#footer ul li a { font-size: 12px; padding: 0 10px; }
+#footer p { clear: both; padding-top: 15px; } 
+#footer p.copyright { font-size: 14px; }
+#footer p.copyright img { margin-top: 7px; }
+#footer p.custom { position: absolute; right: 0; top: 0; }
+#footer p.custom strong { font-weight: bold; }
+#footer p.custom strong a { font-weight: normal; color: #000; text-decoration: none; }
+#footer p.custom span { color: #ccc; padding: 0 5px; }
+#footer a { color: #000; text-decoration: none; }
