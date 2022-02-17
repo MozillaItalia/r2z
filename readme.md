@@ -2,7 +2,7 @@
 Mozilla Italia Release2Zip Suite
 ================================
 Ultima mod. 23-01-2018
-Rif. https://r2z.noads.it
+Rif. https://mozillaitalia.github.io/r2z/
 
 Il software viene rilasciato as-is, non esiste attualmente alcun supporto
 per il prodotto. Tutto il materiale disponibile viene pubblicato nei blog degli sviluppatori.
